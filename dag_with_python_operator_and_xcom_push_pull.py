@@ -36,6 +36,8 @@ with DAG(
     start_date=datetime(2021, 10, 6),
     schedule_interval='@daily'
 ) as dag:
+    
+
     task1 = PythonOperator(
         task_id='greet',
         python_callable=greet,
@@ -51,6 +53,5 @@ with DAG(
         task_id='get_age',
         python_callable=get_age
     )
-
 
     [task2,task3] >> task1
