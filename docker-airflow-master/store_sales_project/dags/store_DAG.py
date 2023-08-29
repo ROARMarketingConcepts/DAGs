@@ -3,8 +3,11 @@ from datetime import datetime, timedelta
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
 from airflow.operators.mysql_operator import MySqlOperator
+from airflow.operators.email_operator import EmailOperator
 
 from datacleaner import data_cleaner
+
+yesterday_date = datetime.strftime(datetime.now()-timedelta(1), '%Y-%m-%d')
 
 default_args = {
 	'owner': 'Airflow',
@@ -48,4 +51,58 @@ t3 = MySqlOperator(
     dag=dag
 	)
 
-t1 >> t2 >> t3
+# Task 4 - insert store sales data into the SQL table
+
+t4 = MySqlOperator(
+    task_id='insert_into_mysql_table', 
+    mysql_conn_id='mysql_conn', 
+    sql='insert_into_table.sql',
+    dag=dag
+	)
+
+# Task 5 - Query the SQL table
+
+t5 = MySqlOperator(
+    task_id='select_from_mysql_table', 
+    mysql_conn_id='mysql_conn', 
+    sql='select_from_table.sql',
+    dag=dag
+	)
+
+# Task 6 - index SQL query output file for 'location_wise_profit.csv' by date
+
+t6 = BashOperator(
+    task_id='move_file1', 
+    bash_command='cat ~/store_files_airflow/location_wise_profit.csv && mv ~/store_files_airflow/location_wise_profit.csv ~/store_files_airflow/location_wise_profit_%s.csv' % yesterday_date,
+    dag=dag
+    )
+
+# Task 7 - index SQL query output file for 'store_wise_profit.csv' by date
+
+t7 = BashOperator(
+    task_id='move_file2', 
+    bash_command='cat ~/store_files_airflow/store_wise_profit.csv && mv ~/store_files_airflow/store_wise_profit.csv ~/store_files_airflow/store_wise_profit_%s.csv' % yesterday_date,
+    dag=dag
+    )
+
+# Task 8 - Send e-mail to stakeholder with profit files attached
+
+t8 = EmailOperator(
+    task_id='send_email',
+    to='ken@roarmarketingconcepts.com',
+    subject='Daily report generated',
+    html_content=""" <h1>Congratulations! Your store reports are ready!</h1> """,
+    files=['/usr/local/airflow/store_files_airflow/location_wise_profit_%s.csv' % yesterday_date, '/usr/local/airflow/store_files_airflow/store_wise_profit_%s.csv' % yesterday_date],
+    dag=dag
+    )
+
+# Task 9 - Rename new 'raw_store_transactions' data file from stakeholders
+
+t9 = BashOperator(
+    task_id='rename_raw', 
+    bash_command='mv ~/store_files_airflow/raw_store_transactions.csv ~/store_files_airflow/raw_store_transactions_%s.csv' % yesterday_date,
+    dag=dag
+    )
+
+t1 >> t2 >> t3 >> t4 >> t5 >> [t6,t7] >> t8 >> t9
+
