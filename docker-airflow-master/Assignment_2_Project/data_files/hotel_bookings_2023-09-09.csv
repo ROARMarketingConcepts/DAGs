@@ -1,0 +1,104 @@
+hotel,is_canceled,lead_time,arrival_date,market_segment,adr,reservation_status,reservation_status_date
+City Hotel,1,100,?,Online TA,76.5,Canceled,2023-01-01
+City Hotel,1,80,?,Online TA,76.5,Canceled,2023-01-02
+City Hotel,1,92,?,Online TA,68,Canceled,2023-01-03
+City Hotel,1,65,?,Online TA,68,Canceled,2023-01-04
+City Hotel,1,83,?,Online TA,76.5,Canceled,2023-01-05
+City Hotel,1,106,?,Online TA,68,Canceled,2023-01-06
+City Hotel,1,92,?,Online TA,76.5,Canceled,2023-01-07
+City Hotel,1,100,?,Online TA,93.6,Canceled,2023-01-08
+City Hotel,1,43,?,Groups,63,Canceled,2023-01-09
+City Hotel,1,43,?,Groups,86,Canceled,2023-01-10
+City Hotel,1,85,?,Online TA,52.36,Canceled,2023-01-11
+City Hotel,1,75,?,Online TA,76.5,Canceled,2023-01-12
+City Hotel,1,89,?,Online TA,68,Canceled,2023-01-13
+City Hotel,1,92,?,Online TA,76.5,Canceled,2023-01-14
+City Hotel,1,68,?,Online TA,68,Canceled,2023-01-15
+City Hotel,1,79,?,Online TA,76.5,Canceled,2023-01-16
+City Hotel,1,63,?,Online TA,68,Canceled,2023-01-17
+City Hotel,1,72,?,Online TA,76.5,Canceled,2023-01-18
+City Hotel,1,43,?,Groups,86,Canceled,2023-01-19
+City Hotel,1,43,?,Groups,63,Canceled,2023-01-20
+City Hotel,1,97,?,Offline TA/TO,63.75,Canceled,2023-01-21
+City Hotel,1,71,?,Online TA,55.8,Canceled,2023-01-22
+City Hotel,1,88,?,Online TA,76.5,Canceled,2023-01-23
+City Hotel,1,62,?,Online TA,76.5,No-Show,2023-01-24
+City Hotel,0,6,?,Offline TA/TO,0,Check-Out,2023-01-25
+City Hotel,1,92,?,Online TA,49.74,Canceled,2023-01-26
+City Hotel,0,3,?,Groups,58.67,Check-Out,2023-01-27
+City Hotel,0,43,?,Groups,86,Check-Out,2023-01-28
+City Hotel,0,43,?,Groups,43,Check-Out,2023-01-29
+City Hotel,0,4,?,Groups,63,Check-Out,2023-01-30
+City Hotel,0,43,?,Groups,63,Check-Out,2023-01-31
+City Hotel,0,18,?,Groups,60,Check-Out,2023-02-01
+City Hotel,0,60,?,Online TA,60.27,Check-Out,2023-02-02
+Resort Hotel,1,75,?,Offline TA/TO,105.5,Canceled,2023-02-03
+Resort Hotel,1,85,?,Online TA,82,Canceled,2023-02-04
+Resort Hotel,1,60,?,Online TA,107,Canceled,2023-02-05
+Resort Hotel,1,45,?,Online TA,117.81,Canceled,2023-02-06
+Resort Hotel,1,45,?,Online TA,108.8,Canceled,2023-02-07
+Resort Hotel,1,43,?,Online TA,108.8,Canceled,2023-02-08
+Resort Hotel,1,96,?,Direct,108.3,Canceled,2023-02-09
+Resort Hotel,1,47,?,Online TA,153,Canceled,2023-02-10
+Resort Hotel,1,101,?,Online TA,73.8,Canceled,2023-02-11
+Resort Hotel,1,71,?,Offline TA/TO,110.3,Canceled,2023-02-12
+Resort Hotel,1,63,?,Online TA,82,Canceled,2023-02-13
+Resort Hotel,1,40,?,Online TA,108.8,Canceled,2023-02-14
+Resort Hotel,1,23,?,Online TA,123,Canceled,2023-02-15
+Resort Hotel,1,3,?,Online TA,136.33,Canceled,2023-02-16
+Resort Hotel,0,342,?,Direct,0,Check-Out,2023-02-17
+Resort Hotel,0,737,?,Direct,0,Check-Out,2023-02-18
+Resort Hotel,0,127,?,Offline TA/TO,94.95,Check-Out,2023-02-19
+Resort Hotel,0,7,?,Direct,75,Check-Out,2023-02-20
+Resort Hotel,0,13,?,Corporate,75,Check-Out,2023-02-21
+Resort Hotel,1,12,?,Online TA,88.2,Check-Out,2023-02-22
+Resort Hotel,0,0,?,Corporate,107.42,Check-Out,2023-02-23
+Resort Hotel,0,14,?,Online TA,98,Check-Out,2023-02-24
+Resort Hotel,1,0,?,Direct,107,Check-Out,2023-02-25
+Resort Hotel,1,9,?,Direct,103,Check-Out,2023-02-26
+Resort Hotel,1,3,?,Online TA,88.2,Check-Out,2023-02-27
+Resort Hotel,0,1,?,Online TA,147,Check-Out,2023-02-28
+Resort Hotel,0,1,?,Direct,107,Check-Out,2023-03-01
+Resort Hotel,0,0,?,Direct,147,Check-Out,2023-03-02
+Resort Hotel,0,0,?,Online TA,117.9,Check-Out,2023-03-03
+Resort Hotel,0,0,?,Direct,123,Check-Out,2023-03-04
+Resort Hotel,1,62,?,Online TA,97,Canceled,2023-03-05
+Resort Hotel,0,14,?,Online TA,98,Check-Out,2023-03-06
+Resort Hotel,1,10,?,Online TA,117.81,Check-Out,2023-03-07
+Resort Hotel,0,5,?,Online TA,135,Check-Out,2023-03-08
+Resort Hotel,1,35,?,Online TA,145,Check-Out,2023-03-09
+Resort Hotel,1,68,?,Online TA,97,Check-Out,2023-03-10
+Resort Hotel,1,18,?,Online TA,154.77,Check-Out,2023-03-11
+Resort Hotel,1,37,?,Online TA,94.71,Check-Out,2023-03-12
+Resort Hotel,1,68,?,Online TA,97,Check-Out,2023-03-13
+Resort Hotel,1,37,?,Offline TA/TO,97.5,Check-Out,2023-03-14
+Resort Hotel,0,7,?,Direct,153,Check-Out,2023-03-15
+Resort Hotel,1,17,?,Direct,133,Check-Out,2023-03-16
+Resort Hotel,1,93,?,Offline TA/TO,58.95,Check-Out,2023-03-17
+Resort Hotel,1,10,?,Online TA,153,Check-Out,2023-03-18
+Resort Hotel,1,3,?,Online TA,110.5,Check-Out,2023-03-19
+Resort Hotel,1,51,?,Online TA,97,Check-Out,2023-03-20
+Resort Hotel,1,2,?,Offline TA/TO,91.5,Check-Out,2023-03-21
+Resort Hotel,0,37,?,Online TA,97.29,Check-Out,2023-03-22
+Resort Hotel,0,15,?,Online TA,98,Check-Out,2023-03-23
+Resort Hotel,0,36,?,Online TA,108.8,Check-Out,2023-03-24
+Resort Hotel,0,72,?,Direct,84.67,Check-Out,2023-03-25
+Resort Hotel,0,72,?,Direct,99.67,Check-Out,2023-03-26
+Resort Hotel,0,70,?,Direct,137,Check-Out,2023-03-27
+Resort Hotel,0,45,?,Offline TA/TO,79.5,Check-Out,2023-03-28
+Resort Hotel,0,16,?,Direct,123,Check-Out,2023-03-29
+Resort Hotel,0,78,?,Offline TA/TO,63.6,Check-Out,2023-03-30
+Resort Hotel,0,48,?,Offline TA/TO,79.5,Check-Out,2023-03-31
+Resort Hotel,0,77,?,Online TA,94,Check-Out,2023-04-01
+Resort Hotel,0,99,?,Online TA,87.3,Check-Out,2023-04-02
+Resort Hotel,0,69,?,Offline TA/TO,65.5,Check-Out,2023-04-03
+Resort Hotel,0,107,?,Online TA,110.7,Check-Out,2023-04-04
+Resort Hotel,0,96,?,Offline TA/TO,58.95,Check-Out,2023-04-05
+Resort Hotel,0,113,?,Offline TA/TO,82.88,Check-Out,2023-04-06
+Resort Hotel,0,90,?,Offline TA/TO,82.35,Check-Out,2023-04-07
+Resort Hotel,0,50,?,Online TA,119.35,Check-Out,2023-04-08
+Resort Hotel,1,113,?,Offline TA/TO,67.58,Check-Out,2023-04-09
+Resort Hotel,0,93,?,Offline TA/TO,56.01,Check-Out,2023-04-10
+Resort Hotel,0,118,?,Direct,62,Check-Out,2023-04-11
+Resort Hotel,0,95,?,Offline TA/TO,63.86,Check-Out,2023-04-12
+Resort Hotel,0,76,?,Offline TA/TO,110.7,Check-Out,2023-04-13

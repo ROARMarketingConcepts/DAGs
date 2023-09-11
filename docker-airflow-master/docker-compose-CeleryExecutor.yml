@@ -42,7 +42,7 @@ services:
             timeout: 30s
             retries: 3
 
-    flower:
+    flower:  # web-based tool for monitoring Celery workers and task progress - task progress can be viewed in the flower UI
         image: puckel/docker-airflow:1.10.9
         restart: always
         depends_on:
